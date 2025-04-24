@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de Segurança do Banco</h1>
+
+    <div class="container">
+      <input type="text" id="usuario" placeholder="Usuário">
+      <input type="password" id="senha" placeholder="Senha">
+      <button onclick="verificarAcesso()">Entrar</button>
+      <div class="mensagem" id="mensagem"></div>
+    </div>
+  
+    <h2>Tabela de Condições</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome de Usuário</th>
+          <th>Senha</th>
+          <th>Acesso</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="acesso">
+          <td>Válido</td>
+          <td>Correta</td>
+          <td> Permitido</td>
+        </tr>
+        <tr class="negado">
+          <td>Inválido</td>
+          <td>Correta</td>
+          <td> Negado</td>
+        </tr>
+        <tr class="negado">
+          <td>Válido</td>
+          <td>Incorreta</td>
+          <td> Negado</td>
+        </tr>
+        <tr class="negado">
+          <td>Inválido</td>
+          <td>Incorreta</td>
+          <td> Negado</td>
+        </tr>
+      </tbody>
+    </table>
+</body>
+</html>
